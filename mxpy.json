@@ -1,0 +1,20 @@
+{
+    "configurations": {
+        "default": {
+            "proxy": "https://devnet-api.elrond.com",
+            "chainID": "D"
+        }
+    },
+    "contract":{
+        "deploy":{
+            "verbose": true,
+            "bytecode": "output/mycounter.wasm",
+            "recall-nonce": true,
+            "pem": "../wallet/owner.pem",
+            "gas-limit": 59999999,
+            "arguments": ["9000","erd19q743dcc7mq8ez4fm5qsutf2k9lxdjrym86x7zaw0znl5r8ke7fqj5sc97", "0"],
+            "send": true,
+            "outfile": "deploy-testnet.interaction.json"
+        }
+     }
+}
